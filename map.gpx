@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="mapstogpx.com" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
+  <metadata>
+    <link href="http://www.mapstogpx.com">
+      <text>Sverrir Sigmundarson</text>
+    </link>
+    <!--desc>Map data ©2018 Google</desc-->
+    <!--copyright author="Google Inc">
+    	<year>2018</year>
+    	<license>https://developers.google.com/maps/terms</license>
+    </copyright-->
+    <!--url>https://www.google.co.uk/maps/dir/Block 127, 127 Ang Mo Kio Ave 3, Singapore 560127/@1.370996,103.8427878,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x31da16dd75018e73:0xf232d1df4971e43a!2m2!1d103.8437717!2d1.3711757!1m5!1m1!1s0x31da16dd9dae7da1:0x7aa4f09f08114271!2m2!1d103.8436139!2d1.3708109!3e2?hl=en</url-->
+    <time>2018-11-14T20:14:56Z</time>
+  </metadata>
+  <wpt lat="1.3711757" lon="103.8437717">
+    <name>Block 127</name>
+    <desc>Block 127, 127 Ang Mo Kio Ave 3, Singapore 560127</desc>
+  </wpt>
+  <wpt lat="1.3708109" lon="103.8436139">
+    <name>128 Ang Mo Kio Ave 3</name>
+    <desc>Zhenyi Veggie Place, 128 Ang Mo Kio Ave 3, Singapore 560128</desc>
+  </wpt>
+<trk>
+  <name>Block 127 to 128 Ang Mo Kio Ave 3</name>
+  <number>1</number>
+  <trkseg>
+  <trkpt lat="1.3710272" lon="103.8437522">
+    <name>TP001</name>
+  </trkpt>
+  <trkpt lat="1.37098" lon="103.84415">
+    <name>TP002</name>
+  </trkpt>
+  <trkpt lat="1.3709" lon="103.84414">
+    <name>TP003</name>
+  </trkpt>
+  <trkpt lat="1.3709037" lon="103.8441413">
+    <name>TP004</name>
+  </trkpt>
+  <trkpt lat="1.37097" lon="103.84363">
+    <name>TP005</name>
+  </trkpt>
+  <trkpt lat="1.37097" lon="103.8436347">
+    <name>TP006</name>
+  </trkpt>
+  </trkseg>
+</trk>
+</gpx>

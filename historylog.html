@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>History Log</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburger/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/historylog.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <!--===============================================================================================-->
+
+</head>
+
+<body>
+
+    <div class="list">
+        <div class="listContainer">
+
+            <div id="headerContent" class="pos-f-t">
+                <nav class="navbar navbar-light">                  
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <h3 style="margin-top:0px; margin-left:180%;"> MENU </h3>  
+                        </span>
+                    </button>
+                    <div style ="position:relative;" >
+                    <a href="home_page.html">
+                    <img class="homeicon" src="https://s3-ap-southeast-1.amazonaws.com/information.system/home.svg  " title="logo" />
+                    </a>
+                </div>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="navbar-nav">
+                        <table class="navTable">
+                            <tr>
+                                <td class="color1"><a class="nav-item nav-link" href="historylog.html"><i class="fa fa-log"></i><img class = "mini"src="https://i.imgur.com/k9x1avI.png" title="source: imgur.com" /></a></td>
+                                <td class="color3"><a class="nav-item nav-link" href="list.html"><i class="fa fa-people"></i><img class = "mini"src="https://s3-ap-southeast-1.amazonaws.com/information.system/statistics.svg" title="source: imgur.com" /></a></td>
+                                <td class="color2"><a class="nav-item nav-link" href="contact.html"><i class="fa fa-people"></i><img class = "mini"src="https://i.imgur.com/uOegLAX.png" title="source: imgur.com" /></a></td>
+                                <td class="color4"><a class="nav-item nav-link" href="emergency.html"><i class="fa fa-sign"></i><img class = "mini"src="https://s3-ap-southeast-1.amazonaws.com/information.system/emergency-ambulance.svg" title="source: imgur.com" /></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>    
+            </div>
+                <!--===============================================================================================-->
+                <div style="display:block;
+                    margin-left: auto; 
+                    margin-right: auto; 
+                    position: relative;
+                    margin:auto;">
+                    <h3 style="margin-bottom: 5px">Location</h3>
+                    <p>Last seen: Today 2:45pm</p>
+
+                    <!-- insert map here -->
+
+                    <div id="map" style="width: 100%; height: 540px;">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+                        <script>
+
+                            function initMap() {
+
+                                var myCenter = { lat: 1.371203, lng: 103.843766 };
+                                var mapOptions = {
+                                    center: myCenter,
+                                    zoom: 19,
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                };
+
+                                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+                                var marker = new google.maps.Marker({
+                                    position: myCenter,
+                                    animation: google.maps.Animation.BOUNCE,
+                                });
+
+                                marker.setMap(map);
+
+                                var contentString = "<p><b>Koh Bee Ling is here!!!</b></p><br>127 Ang Mo Kio Ave 3,<br>Block 127, Singapore 560127";
+                                var infowindow = new google.maps.InfoWindow({
+                                    content: contentString
+                                });
+                                infowindow.open(map, marker);
+
+                                marker.addListener('click', function () {
+                                    infowindow.open(map, marker);
+                                });
+
+
+                                var marker = new google.maps.Marker({
+                                    position: { lat: 1.37098, lng: 103.84415 },
+                                });
+                                marker.setMap(map);
+                                var infowindow = new google.maps.InfoWindow({
+                                    content: "2.33pm"
+                                });
+                                infowindow.open(map, marker);
+
+                                var marker = new google.maps.Marker({
+                                    position: { lat: 1.3709, lng: 103.84414 },
+                                });
+                                marker.setMap(map);
+                                var infowindow = new google.maps.InfoWindow({
+                                    content: "2.15pm"
+                                });
+                                infowindow.open(map, marker);
+
+                                var marker = new google.maps.Marker({
+                                    position: { lat: 1.3709037, lng: 103.8441413 },
+                                });
+                                marker.setMap(map);
+                                var infowindow = new google.maps.InfoWindow({
+                                    content: "2.30pm"
+                                });
+                                infowindow.open(map, marker);
+
+                                var marker = new google.maps.Marker({
+                                    position: { lat: 1.37097, lng: 103.84363 },
+                                });
+                                marker.setMap(map);
+                                var infowindow = new google.maps.InfoWindow({
+                                    content: "1.57pm"
+                                });
+                                infowindow.open(map, marker);
+
+
+                                var lineCoordinates = [
+                                    new google.maps.LatLng(1.371203, 103.843766),
+                                    new google.maps.LatLng(1.37098, 103.84415),
+                                    new google.maps.LatLng(1.3709, 103.84414),
+                                    new google.maps.LatLng(1.37097, 103.84363)
+                                ];
+                                var line = new google.maps.Polyline({
+                                    path: lineCoordinates,
+                                    geodesic: true,
+                                    strokeColor: '#FF0000',
+                                    strokeOpacity: 1.0,
+                                    strokeWeight: 2
+                                });
+
+                                line.setMap(map);
+
+
+                                //     $(document).ready(function () {
+                                //     var reader = new FileReader(new File("map.gpx"));
+
+                                //     reader.onload = function (e) {
+                                //         var text = reader.result;
+                                //         var gpxDoc = $.parseXML(text);
+                                //         var $xml = $(gpxDoc);
+
+                                //         $xml.find('trkpt').each(function () {
+
+
+                                //             var lat = $(this).attr('lat');
+                                //             var lon = $(this).attr('lon');
+
+
+                                //             var marker = new google.maps.Marker({
+                                //                 position: new google.maps.LatLng(lat, lon),
+                                //                 map: map
+                                //             });
+                                //         });
+
+
+                                //     };
+                                //     reader.readAsText(this.files[0]);
+
+                                // });
+                            }
+                        </script>
+
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrfFU5CI8OyipbGPTtHLX-VVXcwHr4zA4&callback=initMap"></script>
+                    </div>
+                    <!-- end map here -->
+
+
+                    <br>
+                    <a href="list.html">
+                        <img src="img/historylog/view.png" style="width: 43px; height: 35px;" />
+                        View Top Places
+                    </a>
+                </div>
+
+                <!--===============================================================================================-->
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <!--===============================================================================================-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap/popper.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="js/select2.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+
+    <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+</body>
+
+</html>
